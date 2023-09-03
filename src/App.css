@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+}
+span{
+  font-family: monospace;
+}
+button{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color:darksalmon;
+}
+.container{
+  width: 50%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 3px darkslategrey;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header span{
+  font-size: 25px;
+  font-weight: 700;
+}
+button{
+  padding: 6px 12px;
+  background: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover{
+  background: #000;
+  color: #fff;
+}
+.char-len{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.char-len span{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+}
+.checkboxs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 14px 0;
+}
+.checkbox{
+  width: 50%;
+  font-size: 21px;
+  margin: 8px 0;
+}
+input, label{
+  cursor: pointer;
+}
+.pwd-str{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 18px;
+}
+.pwd-str span{
+  font-size: 21px;
+  font-weight: 700;
+}
+.pwd-str .green{
+  color: green;
+}
+.pwd-str .lightGreen{
+  color: lightgreen;
+}
+.pwd-str .orange{
+  color: orange;
+}
+.pwd-str .lightRed{
+  color: orangered;
+}
+.pwd-str .red{
+  color: red;
+}
+.pwd-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0;
+}
+.pwd-btn button{
+  width: 80%;
+  font-size: 18px;
+}
+.errMsg{
+  text-align: center;
+  margin: 12px 0;
+  font-size: 16px;
+  color: darkred;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width : 750px) {
+  .container{
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .checkbox{
+    width: 90%;
   }
 }
